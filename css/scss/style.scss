@@ -1,0 +1,205 @@
+$h1-color: black;
+$h2-color: #59c4e4;
+
+$font: 'Open Sans', sans-serif;
+$font-cond: 'Open Sans Condensed', sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: $font-cond;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+p {
+    font-family: $font;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin: 7px 0 0 0;
+}
+
+.header-container {
+    background-image: url("../img/esja_blue_sea.jpg");
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom: 4px solid black;
+    overflow: hidden;
+    hr {
+        position: relative;
+        background-color: black;
+        height: 1px;
+        top: 28px;
+    }
+
+    header { 
+        padding: 130px 0 0 0;
+        text-align: center;
+
+        h1,
+        h2 {
+            font-size: 2.1em;
+            line-height: 1em;
+        }
+        div.top-logo {
+            position: absolute;
+            top: 23px;
+            left: 50%;
+            margin-left: -70px;
+            background-image: url("../img/bakatil_no_line.png");
+            background-size: 140px auto;
+            background-repeat: no-repeat;
+            width: 140px;
+            height: 40px;
+        }
+    }
+}
+
+header {
+    padding: 30px 10%;
+    h1 {
+        color: $h1-color;
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin: 0 0 2px 0;
+    }
+    h2 {
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: $h2-color;
+        font-weight: normal;
+        margin: 0 0 0 0;
+    }
+    p {
+        margin-top: 5px;
+    }
+    svg {
+        position: relative;
+        bottom: -30px;
+        left: 20px;
+        float: left;
+        fill: white;
+    }
+}
+
+
+.main article {
+    width: 100%;
+    
+    section {
+        padding: 40px 10% 35px 10%;
+        
+        h3 {
+            font-family: $font;
+            font-size: 0.9em;
+            font-weight: 800;
+            letter-spacing: 2px;
+            line-height: 1em;
+            margin: 0;
+        }
+        h4 {
+            color: $h2-color;
+            font-family: $font;
+            font-weight: normal;
+            font-size: 1em;
+            margin: 0;
+        }
+    }
+}
+
+.main article.who section {
+    background-color: #dedede;
+    
+    img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+}
+
+/* Custom colors for services
+ * */
+.main article.services {
+    section svg {
+        position: relative;
+        bottom: -35px;
+        left: 20px;
+        float: left;
+    }
+    section:nth-child(2) {
+        background-color: black;
+        color: white;
+        svg { fill: black; }
+    }
+    section:nth-child(3) {
+        background-color: #f08678;
+        color: black;
+        svg { fill: #f08678; }
+    }
+    section:nth-child(4) {
+        background-color: #dedede;
+        color: black;
+        svg { fill: #dedede; }
+    }
+    section:nth-child(5) {
+        background-color: #78e0fc;
+        color: black;
+        svg { fill: #78e0fc; }
+    }    
+    section:nth-child(6) {
+        svg { fill: #fff; }
+    }
+    section:nth-child(7) {
+        background-color: #b5d763;
+        color: black;
+        svg { fill: #b5d763; }
+    }
+    section:nth-child(8) {
+        background-color: #5b5b58;
+        color: white;
+    }
+}
+
+/* Prior work section
+ ******************************/
+
+article.work {
+    background-color: black;
+    padding-top: 4px;
+    color: white;
+    
+    header {
+        border-top: 3px solid #b5d763;
+        
+        h1 {
+            color: $h2-color;
+        }
+    }    
+}
+.work-gallery {
+
+    .work-images {
+        img {
+            float: left;
+            margin-right: 5px;
+        }
+    }
+    .work-desc {
+        padding: 10px 0 10px 0;
+        clear: left;
+        width: 166px;
+        
+        p {
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+
+
+
+
