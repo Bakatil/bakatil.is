@@ -1,8 +1,12 @@
 $h1-color: black;
 $h2-color: #59c4e4;
 
-$font: 'Open Sans', sans-serif;
+$font: Roboto, sans-serif;
 $font-cond: 'Open Sans Condensed', sans-serif;
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
 
 h1,
 h2,
@@ -13,8 +17,8 @@ h3 {
 }
 p {
     font-family: $font;
-    font-size: 0.9em;
-    line-height: 1.3em;
+    font-size: 1em;
+    line-height: 1.4em;
     margin: 7px 0 0 0;
 }
 
@@ -57,7 +61,7 @@ p {
 }
 
 header {
-    padding: 30px 10%;
+    padding: 100px 10% 40px 10%;
     h1 {
         color: $h1-color;
         font-size: 26px;
@@ -73,16 +77,13 @@ header {
     }
     p {
         margin-top: 5px;
-    }
-    svg {
-        position: relative;
-        bottom: -30px;
-        left: 20px;
-        float: left;
-        fill: white;
+        font-family: $font-cond;
+        font-size: 1.3em;
+        font-weight: normal;
+        line-height: 1.1em;
+        letter-spacing: 0.8px;
     }
 }
-
 
 .main article {
     width: 100%;
@@ -92,7 +93,7 @@ header {
         
         h3 {
             font-family: $font;
-            font-size: 0.9em;
+            font-size: 1em;
             font-weight: 800;
             letter-spacing: 2px;
             line-height: 1em;
@@ -108,37 +109,57 @@ header {
     }
 }
 
+/* Employee section
+ **********************************/
+
 .main article.who section {
     background-color: #ececec;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 60px;
 
     div.emp {
         height: 220px;
         overflow: hidden;
-        margin-bottom: 15px;
-        img {
-            width: 100%;
-            margin-top: -60px;
+        margin-bottom: 30px;
+
+        div.emp-image {
+            position: relative;
+
+            img {
+                position: absolute;
+                bottom: -220px;
+                left: 0;
+
+                width: 100%;
+                max-width: 480px;
+            }
         }
     }
     p,
     h3,
     h4 {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
-/* Custom colors for services
- * */
+/* Services section, custom background colors
+ *********************************/
 .main article.services {
     section svg {
         position: relative;
         bottom: -35px;
         left: 20px;
         float: left;
+    }
+    & header svg {
+        position: relative;
+        bottom: -40px;
+        left: 20px;
+        float: left;
+        fill: white;
     }
     section:nth-child(2) {
         background-color: black;
@@ -173,8 +194,6 @@ header {
         color: white;
     }
 }
-
-
 
 /* Prior work section
  ******************************/

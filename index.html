@@ -15,10 +15,15 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,600,700,800,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/skrollr.min.js"></script>
+
     </head>
     <body>
+       <div id="skrollr-body">
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -136,7 +141,12 @@
                     </header>
                     <section>
                         <div class="emp">
-                            <img src="../img/emp/Runar.jpg" alt="">
+                            <div class="emp-image"
+                                    data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+                                    data-top-top="transform:translate3d(0px, 320px, 0px)"
+                                    >
+                                <img src="../img/emp/Runar.jpg" alt="">
+                            </div>
                         </div>
                         <h3>Rúnar Ómarsson</h3>
                         <h4>Samskipti & sala</h4>
@@ -151,7 +161,12 @@
                     </section>
                     <section>
                         <div class="emp">
-                            <img src="../img/emp/Kjarri.jpg" alt="">
+                            <div class="emp-image"
+                                    data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+                                    data-top="transform:translate3d(0px, 320px, 0px)"
+                                    >
+                                <img src="../img/emp/Kjarri.jpg" alt="">
+                            </div>
                         </div>
                         <h3>Kjartan Trauner</h3>
                         <h4>Hönnun & margmiðlun</h4>
@@ -164,8 +179,13 @@
                         </p>
                     </section>
                     <section>
-                       <div class="emp">
-                            <img src="../img/emp/Dagur.jpg" alt="">
+                        <div class="emp">
+                            <div class="emp-image"
+                                    data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+                                    data-top-top="transform:translate3d(0px, 320px, 0px)"
+                                    >
+                                <img src="../img/emp/Dagur.jpg" alt="">
+                            </div>
                         </div>
                         <h3>Dagur Kristinsson</h3>
                         <h4>Vefforritun & aðgengishönnun</h4>
@@ -177,8 +197,13 @@
                         </p>
                     </section>
                     <section>
-                       <div class="emp">
-                            <img src="../img/emp/Gisli.jpg" alt="">
+                        <div class="emp">
+                            <div class="emp-image"
+                                    data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+                                    data-top-top="transform:translate3d(0px, 320px, 0px)"
+                                    >
+                                <img src="../img/emp/Gisli.jpg" alt="">
+                            </div>
                         </div>
                         <h3>Gísli Eyland</h3>
                         <h4>Samskipti & sala</h4>
@@ -193,6 +218,7 @@
                     </section>
 
                 </article>
+
                 <article class="work">
                     <header>
                         <h1>Fyrri verk</h1>
@@ -208,7 +234,8 @@
                             </div>
                             <div class="work-desc">
                                 <p>
-                                    Þróun á marinkjarnaskyrir í samvinnu við Matís, Bío-bú & Nýsköpunarmiðstöðina. Skyrið var unnið fyrir EcoTroFood nýsköpunar-keppni í matvælum árið 2011<br/> Lesa meira:
+                                    Þróun á marinkjarnaskyrir í samvinnu við Matís, Bío-bú & Nýsköpunarmiðstöðina.
+                                    Skyrið var unnið fyrir EcoTroFood nýsköpunar-keppni í matvælum árið 2011<br/> Lesa meira:
                                 </p>
                             </div>
                         </div>
@@ -224,11 +251,19 @@
             </footer>
         </div>
         -->
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/main.js"></script>
+    	<script type="text/javascript">
+            skrollr.init({
+                smoothScrolling: false,
+                mobileDeceleration: 0.004
+            });
+        </script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!-- script>
