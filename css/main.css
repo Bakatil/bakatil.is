@@ -61,7 +61,6 @@ body {
 }
 
 .wrapper {
-    width: 100%;
 }
 
 /* ===================
@@ -95,33 +94,11 @@ body {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
 
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
 
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -155,9 +132,10 @@ body {
         background-image: url("../img/esja_blue_sea_blue_full.jpg");
         height: 600px;
     }
-    .main-container .main article section, .main-container .main article header {
-        padding-left: 20%;
-        padding-right: 20%;
+    .main-container .main article section .wrapper, .main-container .main article header .wrapper {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 

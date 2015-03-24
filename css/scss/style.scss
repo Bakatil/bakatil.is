@@ -21,6 +21,11 @@ p {
     line-height: 1.4em;
     margin: 7px 0 0 0;
 }
+a {
+    color: #4fc8f9;
+}
+.wrapper {
+}
 
 .header-container {
     background-image: url("../img/esja_blue_sea.jpg");
@@ -89,7 +94,9 @@ header {
     width: 100%;
     
     section {
-        padding: 40px 10% 35px 10%;
+        .wrapper {
+            padding: 40px 10% 35px 10%;
+        }
         
         h3 {
             font-family: $font;
@@ -112,7 +119,7 @@ header {
 /* Employee section
  **********************************/
 
-.main article.who section {
+article.who section {
     background-color: #ececec;
     padding-top: 0px;
     padding-left: 0px;
@@ -120,7 +127,7 @@ header {
     padding-bottom: 60px;
 
     div.emp {
-        height: 220px;
+        height: 250px;
         overflow: hidden;
         margin-bottom: 30px;
 
@@ -128,12 +135,11 @@ header {
             position: relative;
 
             img {
-                position: absolute;
-                bottom: -220px;
-                left: 0;
-
                 width: 100%;
                 max-width: 480px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
     }
@@ -154,7 +160,7 @@ header {
         left: 20px;
         float: left;
     }
-    & header svg {
+    header svg {
         position: relative;
         bottom: -40px;
         left: 20px;
@@ -195,6 +201,47 @@ header {
     }
 }
 
+@media only screen and (min-width: 1140px) {
+    article.services {
+        section svg {
+            bottom: -35px;
+        }
+        header svg {
+            bottom: -40px;
+        }
+        section div.service-img {
+            height: 570px;
+            width: 100%;
+            background-color: white;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section:nth-child(2) div.service-img {
+            background-image: url("../img/service_img1.jpg");
+        }
+        section:nth-child(3) div.service-img {
+            background-image: url("../img/service_img2.jpg");
+        }
+        section:nth-child(4) div.service-img {
+            background-image: url("../img/service_img3.jpg");
+        }
+        section:nth-child(5) div.service-img {
+            background-image: url("../img/service_img4.jpg");
+        }
+        section:nth-child(6) div.service-img {
+            background-image: url("../img/service_img5.jpg");
+        }
+        section:nth-child(7) div.service-img {
+            background-image: url("../img/service_img6.jpg");
+        }
+        section:nth-child(8) div.service-img {
+            background-image: url("../img/service_img7.jpg");
+        }
+    }
+
+}
+
 /* Prior work section
  ******************************/
 
@@ -230,7 +277,15 @@ article.work {
     }
 }
 
+/* Where is Bakatil
+ **************************/
+article.where {
+    background-color: #d0af7a;
 
+    header h2 {
+        color: white;
+    }
+}
 
 
 
