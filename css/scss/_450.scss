@@ -1,0 +1,17 @@
+@media only screen and (min-width: 450px) {
+    .main-container .main article.services {
+        section {
+            position: relative;
+            svg {
+                position: relative;
+                bottom: -25px;
+                left: 20px;
+                float: left;
+            }
+            p {
+                display: block !important;
+                visibility: visible;
+            }
+        }
+    }
+}

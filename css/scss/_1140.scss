@@ -1,0 +1,75 @@
+@media only screen and (min-width: 1140px) {
+    html body {
+        h1,
+        h2
+        {
+            font-size: 220% !important;
+        }
+    }
+    .wrapper {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    body {
+        .header-container {
+            background-image: url("../img/esja_blue_sea_blue_full.jpg");
+            height: 630px;
+            header {
+                background-position: center left;
+                h1 {
+                    margin-top: 200px;
+                }
+                div.top-logo {
+                    margin-top: 50px;
+                    background-image: url("../img/logo.svg");
+                    background-size: 180px auto;
+                    background-repeat: no-repeat;
+                    width: 180px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    article header {
+        text-align: center;
+    }
+
+    article.services {
+        section svg {
+            bottom: -35px;
+        }
+        header svg {
+            bottom: -40px;
+        }
+        section div.service-img {
+            height: 570px;
+            background-color: white;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section:nth-child(2) div.service-img {
+            background-image: url("../img/service_img1.jpg");
+        }
+        section:nth-child(3) div.service-img {
+            background-image: url("../img/service_img2_alt.jpg");
+        }
+        section:nth-child(4) div.service-img {
+            background-image: url("../img/service_img3.jpg");
+        }
+        section:nth-child(5) div.service-img {
+            background-image: url("../img/service_img4_alt.jpg");
+        }
+        section:nth-child(6) div.service-img {
+            background-image: url("../img/service_img5.jpg");
+        }
+        section:nth-child(7) div.service-img {
+            background-image: url("../img/service_img6.jpg");
+        }
+        section:nth-child(8) div.service-img {
+            background-image: url("../img/service_img7.jpg");
+        }
+    }
+}
