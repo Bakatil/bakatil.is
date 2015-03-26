@@ -1,4 +1,5 @@
-@import '_450.scss';
+@import '_480.scss';
+@import '_768.scss';
 @import '_1140.scss';
 @import '_1440.scss';
 
@@ -16,7 +17,6 @@ h1,
 h2,
 h3 {
     font-family: $font-cond;
-    font-size: 1.5em;
     text-transform: uppercase;
 }
 p {
@@ -33,6 +33,10 @@ a {
     padding-left: 10%;
     padding-right: 10%;
 }
+.more {
+    display: none;
+    visibility: hidden;
+}
 
 .header-container {
     background-image: url("../img/esja_blue_sea.jpg");
@@ -46,13 +50,12 @@ a {
     header {
         text-align: center;
 
-        h1,
-        h2 {
-            font-size: 2em;
-            line-height: 1em;
-        }
         h1 {
             margin-top: 80px;
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.9em;
         }
         div.top-logo {
             margin-top: 40px;
@@ -68,21 +71,23 @@ a {
 header {
     h1 {
         color: $h1-color;
-        font-size: 26px;
-        letter-spacing: 1px;
+        font-size: 1.7em;
+        line-height: 1em;
+        letter-spacing: 0px;
+        font-family: $font;
         margin: 0 0 2px 0;
     }
     h2 {
-        font-size: 25px;
-        letter-spacing: 2px;
         color: $h2-color;
+        font-size: 1.6em;
+        letter-spacing: 0.25px;
         font-weight: normal;
         margin: 0 0 0 0;
     }
     p {
         margin-top: 5px;
         font-family: $font-cond;
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-weight: normal;
         line-height: 1.1em;
         letter-spacing: 0.8px;
@@ -102,10 +107,9 @@ header {
         }
         h3 {
             font-family: $font;
-            font-size: 1em;
+            font-size: 1.1em;
             font-weight: 800;
             letter-spacing: 2px;
-            line-height: 1em;
             margin: 0;
         }
         h4 {
@@ -123,55 +127,49 @@ header {
  **********************************************/
 .main article.services {
     section {
+        position: relative;
         svg {
             position: relative;
-            bottom: -25px;
+            top: -30px;
             left: 20px;
             float: left;
         }
-        p {
-            display: none !important;
-            visibility: hidden;
+        h3 {
+            clear: left;
         }
-    }
-    header svg {
-        position: relative;
-        bottom: -40px;
-        left: 20px;
-        float: left;
-        fill: white;
     }
     section:nth-child(2) {
         background-color: black;
         color: white;
-        svg { fill: black; }
+        svg { fill: white; }
     }
     section:nth-child(3) {
         background-color: #f08678;
         color: black;
-        svg { fill: #f08678; }
+        svg { fill: black; }
     }
     section:nth-child(4) {
         background-color: #dedede;
         color: black;
-        svg { fill: #dedede; }
+        svg { fill: #f08678; }
     }
     section:nth-child(5) {
         background-color: #78e0fc;
         color: black;
-        svg { fill: #78e0fc; }
+        svg { fill: #dedede; }
     }    
     section:nth-child(6) {
-        svg { fill: #fff; }
+        svg { fill: #78e0fc; }
     }
     section:nth-child(7) {
         background-color: #b5d763;
         color: black;
-        svg { fill: #b5d763; }
+        svg { fill: white; }
     }
     section:nth-child(8) {
         background-color: #5b5b58;
         color: white;
+        svg { fill: #b5d763; }
     }
 }
 
