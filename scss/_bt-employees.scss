@@ -1,7 +1,56 @@
 /* Employee section
 ********************************************/
 
-div.bt-employees {
+@media #{$medium-up} {
+  div.bt-employees {
+
+    background-color: white;
+    padding-top: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 60px;
+
+    ul.employee-list {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      li {
+        list-style: none;
+        min-width: 270px;
+        max-width: 290px;
+        flex-grow: 1;
+        .columns {
+          padding-left: 0;
+        }
+      }
+      li.pusher {
+        min-width: 0px;
+        max-width: none;
+      }
+      div.emp {
+        height: 410px;
+        overflow: hidden;
+        border-bottom: 4px solid $primary-color;
+        margin-bottom: 30px;
+
+        div.emp-image {
+          position: relative;
+          padding-right: 50px;
+
+          img {
+            max-height: 410px;
+            position: relative;
+            //top: 50%;
+            //transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.bt-employees {
 
   background-color: #ececec;
   padding-top: 0px;
@@ -16,7 +65,7 @@ div.bt-employees {
       overflow: hidden;
       margin-bottom: 30px;
 
-      div.emp-image {
+      div.small-emp-image {
         position: relative;
         text-align: center;
 
@@ -29,9 +78,12 @@ div.bt-employees {
         }
       }
     }
-    h4 {
-      font-weight: normal;
-      margin: 0;
+    h3.subheader {
+      text-transform: none;
+      font-size: rem-calc(18);
+      line-height: 1.5rem;
+      font-weight: 300;
+      font-family: $font-family-sans-serif;
     }
   }
 }

@@ -1,3 +1,26 @@
+@media #{$large-up} {
+  div.header-container {
+    height: 600px;
+    h1 {
+      margin-top: 17rem;
+    }
+    img.top-logo {
+      margin-top: 40px;
+      width: 170px;
+    }
+  }
+}
+@media #{$medium-only} {
+  div.header-container {
+    height: 500px;
+    h1 {
+      margin-top: 13rem;
+    }
+    img.top-logo {
+      width: 150px;
+    }
+  }
+}
 .header-container {
   //  background-image: url("../img/hero_full.jpg");
   height: 400px;
@@ -10,10 +33,12 @@
   text-align: center;
 
   h1 {
-    margin-top: 180px;
+    letter-spacing: -1px;
+    margin-top: 10rem;
   }
   h1.subheader {
     margin-top: 0;
+    font-weight: 300;
   }
   img.top-logo {
     margin-top: 40px;

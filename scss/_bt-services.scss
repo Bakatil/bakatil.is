@@ -1,11 +1,38 @@
 /* Services section, custom background colors
 **********************************************/
 
-div.main-container div.full-row .bt-services-container {
+@media #{$large-up} {
+  div.bt-service div.row div.columns div.more {
+    position: absolute;
+    top: 130px;
+    padding-top: 60px;
+    p {
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 120%;
+      //letter-spacing: 0.04rem;
+      //text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    }
+  }
+  div.bt-services-container div.bt-service {
+    svg {
+      position: absolute;
+      bottom: -69px;
+      width: 40px;
+      height: 40px;
+      left: 180px;
+    }
+  }
+}
+
+.bt-services-container {
   margin: 0;
   div.row {
-    padding-top: 34px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .columns {
+      position: relative;
+    }
   }
   a.link-row {
     padding: 29px $small-column-gutter 29px $small-column-gutter;
@@ -40,32 +67,33 @@ div.main-container div.full-row .bt-services-container {
     }
     svg {
       position: relative;
-      bottom: -29px;
+      bottom: -39px;
       left: 40px;
       float: left;
       z-index: 1000;
     }
     svg.top {
       position: relative;
-      top: -34px;
+      top: -30px;
       left: 40px;
       float: left;
       fill: white !important;
     }
     h3 {
-      font-size: 1.1em;
-      font-weight: 800;
-      letter-spacing: 2px;
+      font-weight: 400;
+      letter-spacing: 1px;
       margin: 0;
       clear: left;
     }
     h4 {
       margin: 5px 0 0 0px;
       font-family: $font-family-sans-serif;
-      font-size: 1em;
-      font-weight: normal;
-      line-height: 1.1em;
-      letter-spacing: 0.7px;
+      font-weight: 300;
+      line-height: 1em;
+      letter-spacing: 0.04rem;
+    }
+    p {
+      font-weight: 300;
     }
   }
   .bt-service:nth-child(1) {
@@ -123,5 +151,8 @@ div.main-container div.full-row .bt-services-container {
       background-image: url("../img/service_img7.jpg");
     }
     h3, h4 { color: white; }
+    .more {
+      color: black;
+    }
   }
 }

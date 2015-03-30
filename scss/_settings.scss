@@ -92,8 +92,8 @@ $small-column-gutter: #{($column-gutter*0.5) / 2};
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: Roboto, sans-serif;
-$font-family-header: 'Open Sans Condensed', sans-serif;
+$font-family-sans-serif: 'soleil', sans-serif;
+$font-family-header: 'soleil', sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -203,7 +203,7 @@ $body-font-weight: $font-weight-normal;
 
 // We use these to control header font styles
 $header-font-family: $font-family-header;
-$header-font-weight: $font-weight-bold;
+$header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 $header-line-height: 1.1;
@@ -215,7 +215,7 @@ $header-bottom-margin: 0;
 $h1-font-size: rem-calc(40);
 $h2-font-size: rem-calc(33);
 $h3-font-size: rem-calc(23);
-$h4-font-size: rem-calc(20);
+$h4-font-size: rem-calc(18);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
@@ -230,7 +230,7 @@ $h4-font-reduction: rem-calc(2);
 // These control how subheaders are styled.
 $subheader-line-height: 1.1;
 $subheader-font-color: $primary-color;
-// $subheader-font-weight: $font-weight-normal;
+$subheader-font-weight: $font-weight-normal;
 $subheader-top-margin: 0;
 // $subheader-bottom-margin: .5rem;
 
@@ -240,7 +240,7 @@ $subheader-top-margin: 0;
 
 // We use these to style paragraphs
 $paragraph-font-family: $font-family-sans-serif;
-// $paragraph-font-weight: $font-weight-normal;
+$paragraph-font-weight: $font-weight-normal;
 // $paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
