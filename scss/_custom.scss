@@ -1,0 +1,131 @@
+@import "bt-header";
+@import "bt-services";
+@import "bt-employees";
+
+@media #{$small-only} {
+  .columns {
+    padding: 0 $small-column-gutter 0 $small-column-gutter;
+  }
+}
+
+.full-row {
+  width: 100%;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.bt-header {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  p {
+    margin-bottom: 0;
+    font-size: rem-calc(18);
+    font-weight: normal;
+    line-height: 1.1em;
+    letter-spacing: 0.8px;
+  }
+}
+
+.bt-color {
+  color: $primary-color;
+}
+
+.more {
+}
+
+header {
+  h1 {
+    font-size: 1.7em;
+    line-height: 1em;
+    letter-spacing: 0px;
+    margin: 0 0 2px 0;
+  }
+  h2 {
+    font-size: 1.6em;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+    margin: 0 0 0 0;
+  }
+  p {
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1.1em;
+    letter-spacing: 0.8px;
+  }
+}
+
+.main article {
+  width: 100%;
+
+  header {
+    padding: 100px 0 40px 0;
+  }
+  section {
+    .wrapper {
+      padding-top: 30px;
+      padding-bottom: 25px;
+    }
+    h3 {
+      font-size: 1.1em;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    h4 {
+      margin: 5px 0 0 0px;
+      font-size: 1.2em;
+      font-weight: normal;
+      line-height: 1.1em;
+      letter-spacing: 0.8px;
+    }
+  }
+}
+
+
+
+/* Prior work section
+******************************************/
+
+div.bt-work {
+  background-color: black;
+  padding-top: 4px;
+  color: white;
+
+  .bt-header {
+    border-top: 3px solid #b5d763;
+
+    h2 {
+      color: $primary-color;
+    }
+  }
+}
+.work-gallery {
+
+  .work-images {
+    img {
+      float: left;
+      margin-right: 5px;
+    }
+  }
+  .work-desc {
+    padding: 10px 0 10px 0;
+    clear: left;
+    width: 166px;
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+/* Where is Bakatil
+**************************/
+div.bt-where {
+  background-color: #d0af7a;
+
+  header h2 {
+    color: white;
+  }
+}

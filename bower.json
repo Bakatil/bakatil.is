@@ -1,0 +1,19 @@
+{
+  "name": "grunt wiredep",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "skrollr": "~0.6.29"
+  },
+  "version": "0.0.0",
+  "authors": [
+    "Dagur Kristinsson <dagurk@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

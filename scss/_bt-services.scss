@@ -1,0 +1,127 @@
+/* Services section, custom background colors
+**********************************************/
+
+div.main-container div.full-row .bt-services-container {
+  margin: 0;
+  div.row {
+    padding-top: 34px;
+    padding-bottom: 20px;
+  }
+  a.link-row {
+    padding: 29px $small-column-gutter 29px $small-column-gutter;
+    background-color: inherit;
+  }
+  li.bt-service {
+    svg {
+      bottom: -9px;
+      left: 70px;
+    }
+    svg.top {
+      top: 0px;
+      left: 70px;
+      fill: white !important;
+    }
+  }
+  .bt-service {
+    position: relative;
+    .content {
+      padding: 0 $small-column-gutter 20px $small-column-gutter;
+      background-color: inherit;
+    }
+    .more {
+      padding-top: 20px;
+    }
+    div.service-img {
+      height: 570px;
+      background-color: white;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    svg {
+      position: relative;
+      bottom: -29px;
+      left: 40px;
+      float: left;
+      z-index: 1000;
+    }
+    svg.top {
+      position: relative;
+      top: -34px;
+      left: 40px;
+      float: left;
+      fill: white !important;
+    }
+    h3 {
+      font-size: 1.1em;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin: 0;
+      clear: left;
+    }
+    h4 {
+      margin: 5px 0 0 0px;
+      font-family: $font-family-sans-serif;
+      font-size: 1em;
+      font-weight: normal;
+      line-height: 1.1em;
+      letter-spacing: 0.7px;
+    }
+  }
+  .bt-service:nth-child(1) {
+    background-color: black;
+    color: white;
+    svg { fill: black; }
+    div.service-img {
+      background-image: url("../img/service_img1.jpg");
+    }
+    h3, h4 { color: white; }
+  }
+  .bt-service:nth-child(2) {
+    background-color: #f08678;
+    color: black;
+    svg { fill: #f08678; }
+    div.service-img {
+      background-image: url("../img/service_img2_alt.jpg");
+    }
+  }
+  .bt-service:nth-child(3) {
+    background-color: #dedede;
+    color: black;
+    svg { fill: #dedede; }
+    div.service-img {
+      background-image: url("../img/service_img3.jpg");
+    }
+  }
+  .bt-service:nth-child(4) {
+    background-color: #78e0fc;
+    color: black;
+    svg { fill: #78e0fc; }
+    div.service-img {
+      background-image: url("../img/service_img4_alt.jpg");
+    }
+  }    
+  .bt-service:nth-child(5) {
+    svg { fill: white; }
+    div.service-img {
+      background-image: url("../img/service_img5.jpg");
+    }
+  }
+  .bt-service:nth-child(6) {
+    background-color: #b5d763;
+    color: black;
+    svg { fill: #b5d763; }
+    div.service-img {
+      background-image: url("../img/service_img6.jpg");
+    }
+  }
+  .bt-service:nth-child(7) {
+    background-color: #5b5b58;
+    color: white;
+//    svg { fill: #b5d763; }
+    div.service-img {
+      background-image: url("../img/service_img7.jpg");
+    }
+    h3, h4 { color: white; }
+  }
+}

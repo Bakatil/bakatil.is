@@ -1,0 +1,37 @@
+/* Employee section
+********************************************/
+
+div.bt-employees {
+
+  background-color: #ececec;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 60px;
+
+  ul.employee-list {
+    margin: 0;
+    div.emp {
+      height: 220px;
+      overflow: hidden;
+      margin-bottom: 30px;
+
+      div.emp-image {
+        position: relative;
+        text-align: center;
+
+        img {
+          width: 100%;
+          max-width: 280px;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    h4 {
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+}
