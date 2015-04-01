@@ -49,6 +49,12 @@
     }
   }
 }
+@media #{$small-only} {
+  .pusher {
+    display: none !important;
+    visibility: hidden;
+  }
+}
 
 .bt-employees {
 

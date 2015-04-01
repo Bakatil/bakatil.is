@@ -25,7 +25,7 @@
   }
 }
 
-.bt-services-container {
+div.full-row .bt-services-container {
   margin: 0;
   div.row {
     padding-top: 30px;
@@ -51,7 +51,7 @@
   }
   .bt-service {
     position: relative;
-    .content {
+    div.content {
       padding: 0 $small-column-gutter 20px $small-column-gutter;
       background-color: inherit;
     }
