@@ -6,6 +6,7 @@
     position: absolute;
     top: 130px;
     padding-top: 60px;
+    background: rgba(255,255,255,0.2);
     p {
       font-size: 1.3rem;
       font-weight: 400;
@@ -14,7 +15,7 @@
       //text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     }
   }
-  div.bt-services-container div.bt-service {
+  div.full-row div.bt-services-container div.bt-service {
     svg {
       position: absolute;
       bottom: -69px;
