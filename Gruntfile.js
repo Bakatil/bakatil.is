@@ -50,13 +50,13 @@ module.exports = function(grunt) {
           livereload: true
         },
         files: [
-          'index.html', 'scss/*.scss'
+          'index.html', 'verk.html', 'scss/*.scss'
         ]
       }
     },
     connect: {
       options: {
-        hostname: 'localhost',
+        hostname: '192.168.1.2',
         port: 8080,
         base: '',
         open: true,
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
         // Point to the files that should be updated when
         // you run `grunt wiredep`
         src: [
-          'index.html'
+          'index.html', 'verk.html'
         ],
 
         options: {

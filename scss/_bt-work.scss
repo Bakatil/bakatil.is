@@ -1,6 +1,17 @@
 /* Prior work section
 ******************************************/
 
+@media #{$small-only} {
+  .bt-work-images {
+    img {
+      padding-bottom: 10px;
+    }
+  }
+  .work-content {
+    padding-top: 10px;
+  }
+}
+
 div.bt-work {
   background-color: black;
   padding-top: 4px;
@@ -14,7 +25,6 @@ div.bt-work {
     background-color: $black;
   }
   .bt-header {
-
     h2 {
       color: $primary-color;
     }
@@ -35,5 +45,15 @@ div.bt-work {
     p {
       text-align: left;
     }
+  }
+}
+
+.minimal .main-container {
+  .bt-work-item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .bt-work .columns {
+    padding-top: 50px;
   }
 }

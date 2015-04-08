@@ -183,6 +183,8 @@ $body-font-weight: $font-weight-normal;
  $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
  $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
 
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 2)";
+
 // Legacy
 // $small: $medium-up;
 // $medium: $medium-up;
@@ -220,7 +222,7 @@ $h4-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
-$h1-font-reduction: rem-calc(5);
+$h1-font-reduction: rem-calc(8);
 $h2-font-reduction: rem-calc(5);
 $h3-font-reduction: rem-calc(2);
 $h4-font-reduction: rem-calc(2);

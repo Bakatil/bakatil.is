@@ -69,6 +69,9 @@
 
   ul.employee-list {
     margin: 0;
+    li {
+      padding-bottom: 30px;
+    }
     div.emp {
       height: 220px;
       overflow: hidden;
@@ -82,8 +85,8 @@
           width: 100%;
           max-width: 280px;
           position: relative;
-          top: 50%;
-          transform: translateY(-50%);
+          //bottom: 50%;
+          //transform: translateY(-50%);
         }
       }
     }

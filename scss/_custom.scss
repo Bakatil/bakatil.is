@@ -4,6 +4,7 @@
 @import "bt-work";
 @import "bt-where";
 @import "bt-footer";
+@import "bt-menu";
 
 @media #{$small-only} {
   .columns {
@@ -16,6 +17,11 @@
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
+}
+
+body.noscroll {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .full-row {
