@@ -1,0 +1,39 @@
+/* Prior work section
+******************************************/
+
+div.bt-work {
+  background-color: black;
+  padding-top: 4px;
+  padding-bottom: 3rem;
+  color: $silver;
+
+  .bt-hline {
+    border-top: 3px solid #b5d763;
+    box-sizing: border-box;
+    height: 3px;
+    background-color: $black;
+  }
+  .bt-header {
+
+    h2 {
+      color: $primary-color;
+    }
+  }
+}
+.work-gallery {
+  .work-images {
+    img {
+      float: left;
+      margin-right: 5px;
+    }
+  }
+  .work-desc {
+    padding: 10px 0 10px 0;
+    clear: left;
+    width: 166px;
+
+    p {
+      text-align: left;
+    }
+  }
+}

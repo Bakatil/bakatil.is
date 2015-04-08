@@ -3,13 +3,11 @@
 
 @media #{$large-up} {
   div.bt-service div.row div.columns div.more {
-    position: absolute;
-    top: 190px;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 100%;
-    background: rgba(0,0,0,0.4);
+    width: 50%;
+    float: left;
+    padding-left: 25px;
+    padding-top: 94px;
+    padding-bottom: 10px;
     p {
       font-size: 1.1rem;
       font-weight: 300;
@@ -18,16 +16,44 @@
       //text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     }
     p.contact {
-      padding-top: 30px;
+      //padding-top: 10px;
+      font-weight: 400;
     }
   }
   div.full-row div.bt-services-container div.bt-service {
+    .serviceheader {
+      width: 50%;
+      float: left;
+      text-align: right;
+      padding-right: 25px;
+
+    }
+    h3 {
+      padding-top: 20px;
+      font-weight: 200;
+      text-transform: capitalize;
+      letter-spacing: 0.01rem;
+      font-size: rem_calc(40);
+    }
+    h4 {
+      padding-top: 15px;
+    }
     svg {
       position: absolute;
-      bottom: -69px;
-      width: 40px;
-      height: 40px;
-      left: 180px;
+      bottom: -55px;
+      width: 27px;
+      height: 27px;
+      left: 50%;
+      margin-left: -12px;
+    }
+    svg.top {
+      position: absolute;
+      top: -32px;
+      width: 27px;
+      height: 27px;
+      left: 50%;
+      margin-left: -12px;
+      fill: white !important;
     }
   }
 }
@@ -66,16 +92,6 @@ div.full-row .bt-services-container {
         letter-spacing: 0.04rem;
       }
     }
-    .more {
-      padding-top: 20px;
-    }
-    div.service-img {
-      height: 570px;
-      background-color: white;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
     svg {
       position: relative;
       bottom: -39px;
@@ -91,13 +107,14 @@ div.full-row .bt-services-container {
       fill: white !important;
     }
     h3 {
-      font-weight: 400;
-      letter-spacing: 1px;
+      font-weight: 300;
+      letter-spacing: 0.04rem;
+      font-size: rem_calc(26);
       margin: 0;
       clear: left;
     }
     h4 {
-      margin: 5px 0 0 0px;
+      margin: 15px 0 0 0px;
       font-family: $font-family-sans-serif;
       font-weight: 300;
       line-height: 1.2em;
@@ -106,10 +123,19 @@ div.full-row .bt-services-container {
     p {
       font-weight: 300;
     }
+    div.service-img {
+      display: none;
+      visibility: hidden;
+      height: 0px;
+      background-color: white;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
   .bt-service:nth-child(1) {
     background-color: black;
-    color: white;
+    color: $silver;
     svg { fill: black; }
     div.service-img {
       background-image: url("../img/service_img1.jpg");
@@ -118,7 +144,6 @@ div.full-row .bt-services-container {
   }
   .bt-service:nth-child(2) {
     background-color: #f08678;
-    color: black;
     svg { fill: #f08678; }
     div.service-img {
       background-image: url("../img/service_img2_alt.jpg");
@@ -126,7 +151,6 @@ div.full-row .bt-services-container {
   }
   .bt-service:nth-child(3) {
     background-color: #dedede;
-    color: black;
     svg { fill: #dedede; }
     div.service-img {
       background-image: url("../img/service_img3.jpg");
@@ -134,7 +158,6 @@ div.full-row .bt-services-container {
   }
   .bt-service:nth-child(4) {
     background-color: #78e0fc;
-    color: black;
     svg { fill: #78e0fc; }
     div.service-img {
       background-image: url("../img/service_img4_alt.jpg");
@@ -148,7 +171,6 @@ div.full-row .bt-services-container {
   }
   .bt-service:nth-child(6) {
     background-color: #b5d763;
-    color: black;
     svg { fill: #b5d763; }
     div.service-img {
       background-image: url("../img/service_img6.jpg");
@@ -156,14 +178,10 @@ div.full-row .bt-services-container {
   }
   .bt-service:nth-child(7) {
     background-color: #5b5b58;
-    color: white;
 //    svg { fill: #b5d763; }
     div.service-img {
       background-image: url("../img/service_img7.jpg");
     }
-    h3, h4 { color: white; }
-    .more {
-      color: black;
-    }
+    h3, h4, .more { color: $silver; }
   }
 }

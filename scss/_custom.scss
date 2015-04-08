@@ -1,6 +1,9 @@
 @import "bt-header";
 @import "bt-services";
 @import "bt-employees";
+@import "bt-work";
+@import "bt-where";
+@import "bt-footer";
 
 @media #{$small-only} {
   .columns {
@@ -22,6 +25,9 @@ h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: -1px;
 }
+a:hover {
+  opacity: 0.8;
+}
 
 .bt-header {
   padding-top: 4rem;
@@ -34,54 +40,10 @@ h1, h2, h3 {
     font-size: rem-calc(20);
     font-weight: 300;
     line-height: 1.1em;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.025rem;
   }
 }
 
 .bt-color {
   color: $primary-color;
-}
-
-/* Prior work section
-******************************************/
-
-div.bt-work {
-  background-color: black;
-  padding-top: 4px;
-  color: white;
-
-  .bt-header {
-    border-top: 3px solid #b5d763;
-
-    h2 {
-      color: $primary-color;
-    }
-  }
-}
-.work-gallery {
-  .work-images {
-    img {
-      float: left;
-      margin-right: 5px;
-    }
-  }
-  .work-desc {
-    padding: 10px 0 10px 0;
-    clear: left;
-    width: 166px;
-
-    p {
-      text-align: left;
-    }
-  }
-}
-
-/* Where is Bakatil
-**************************/
-div.bt-where {
-  background-color: #d0af7a;
-
-  header h2 {
-    color: white;
-  }
 }

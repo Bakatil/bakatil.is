@@ -1,0 +1,21 @@
+html body div.footer-container {
+  height: 150px;
+  border-top: 3px solid black;
+  background-image: url("../img/hero_small.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  footer {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 15px 0 15px 0;
+    //height: 120px;
+    h3 {
+      padding: 1px 5px 1px 5px;
+      line-height: 1em;
+      display: inline;
+      background-color: rgba(0,0,0,0.6);
+      color: $silver;
+    }
+  }
+}
