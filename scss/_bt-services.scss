@@ -162,8 +162,8 @@ div.full-row .bt-services-container {
     }
   }
   .bt-service:nth-child(4) {
-    background-color: #78e0fc;
-    svg { fill: #78e0fc; }
+    background-color: $primary-color;
+    svg { fill: $primary-color; }
     div.service-img {
       background-image: url("../img/service_img4_alt.jpg");
     }
