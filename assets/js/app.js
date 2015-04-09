@@ -11,20 +11,15 @@ $(function() {
     toggleHandler(toggle);
   };
 
+  var expandMenu = $('.responsive-menu');
+
   function toggleHandler(toggle) {
     toggle.addEventListener( "click", function(e) {
       e.preventDefault();
       (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+      (expandMenu.hasClass("expand") === true) ? expandMenu.removeClass("expand") : expandMenu.addClass("expand");
     });
   }
-
-  $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
-    $('html').addClass("noscroll");
-  });
-
-  $(document).on('closed.fndtn.reveal', '[data-reveal]', function () {
-    $('html').removeClass("noscroll");
-  });
 
   try{
     skrollr.init({

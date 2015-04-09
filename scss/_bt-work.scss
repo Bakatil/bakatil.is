@@ -17,9 +17,10 @@ div.bt-work {
   padding-top: 4px;
   padding-bottom: 3rem;
   color: $silver;
+  border-top: 3px solid #b5d763;
+
 
   .bt-hline {
-    border-top: 3px solid #b5d763;
     box-sizing: border-box;
     height: 3px;
     background-color: $black;
