@@ -1,6 +1,18 @@
 @import "settings";
 @import "foundation";
-@import "custom";
+
+@import
+   "foundation/components/alert-boxes",
+   "foundation/components/block-grid",
+   "foundation/components/button-groups",
+   "foundation/components/buttons",
+   "foundation/components/clearing",
+   "foundation/components/flex-video",
+   "foundation/components/grid",
+   "foundation/components/thumbs",
+   "foundation/components/top-bar",
+   "foundation/components/type",
+   "foundation/components/visibility";
 
 // Or selectively include components
 // @import
@@ -40,3 +52,4 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+@import "custom";
