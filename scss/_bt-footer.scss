@@ -4,12 +4,50 @@
 }
 div.footer-container {
   min-height: 20px;
-  //border-top: 3px solid black;
-  //background-image: url("../img/hero_full.jpg");
-  //background-repeat: no-repeat;
-  //background-position: center bottom;
-  border-top: 5px solid #5A8CA8;
-  background-color: $primary-color;
+  max-height: rem_calc(200);
+  background-color: #5A8CA8;
+  position: relative;
+  overflow: hidden;
+  div.columns {
+    text-align: center;
+  }
+  .footer-content {
+    position: absolute;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100px;
+    top: rem_calc(60);
+    z-index: 30;
+    span {
+    }
+    .footer-adr {
+      text-align: right;
+      width: 400px;
+      float: left;
+      padding-right: 20px;
+      padding-top: 13px;
+      p {
+        color: $silver;
+        font-weight: 200;
+        margin: 0px;
+        line-height: 1.1em;
+        text-transform: capitalize;
+        letter-spacing: 0.02rem;
+        font-size: rem_calc(22);
+      }
+    }
+    .footer-contact {
+      float: left;
+      width: 200px;
+    }
+  }
+  img {
+    position: relative;
+    bottom: rem_calc(-100);
+    width: 100%;
+    opacity: 0.051;
+  }
   div.bt-copy {
     background-color: #5A8CA8;
     font-size: rem_calc(12);
@@ -28,6 +66,16 @@ div.footer-container {
 //      display: inline;
 //      background-color: rgba(0,0,0,0.6);
       color: $silver;
+    }
+  }
+}
+
+@media #{$large-up} {
+  body div.footer-container {
+    .footer-content {
+    }
+    img {
+      bottom: rem_calc(-50);
     }
   }
 }
