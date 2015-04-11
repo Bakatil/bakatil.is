@@ -1,57 +1,40 @@
-$button-width: 85px;
-$button-height: 66px;
-$bar-thickness: 6px;
-$button-pad: 18px;
+$button-width: 55px;
+$button-height: 46px;
+$bar-thickness: 4px;
+$button-pad: 12px;
 $button-trans-delay: 0.3s;
 
-.header-container .mobile-nav {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-}
-.menu-btn div {
-  position: absolute;
-  left: 100%;
-  top: 64%;
-  padding-right: 8px;
-  margin-top: -0.50em;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 200;
-  vertical-align: middle;
-  z-index: 99;
+@media #{$large-up} {
 }
 
-.menu-btn span {
-  display: block;
-  width: 19px;
-  height: 3px;
-  margin: 4px 0;
-  background: rgb(0,0,0);
-  z-index: 99;
-}
-
-.responsive-menu {
-  position: relative;
-  right: 0px;
-  top: 66px;
-  display: none;
+.bt-oc-menu {
+  background-color: $primary-color;
+  border-right: 10px solid #5A8CA8;
+  padding-top: 40px;
   ul {
-    list-style: none;
-    li {
-      height: 1.3rem;
+    text-align: right;
+    color: $silver;
+    li a {
+      display: block;
+      padding: 0 15px 10px 15px;
+      margin-top: 10px;
+      width: 100%;
+      text-decoration: none;
+      border-bottom: 1px solid #5A8CA8;
     }
   }
 }
 
-.expand {
-  display: block !important;
-}
+/* Styles for animated menu icon
+ *****************************************/
 
 .bt-menu-container {
-  position: relative;
   width: $button-width;
-  float: right;
+  height: $button-height;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 12;
 }
 
 .cmn-toggle-switch {

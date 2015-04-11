@@ -56,6 +56,24 @@
     }
   }
 }
+@media #{$medium-only} {
+  div.full-row div.bt-services-container div.bt-service {
+    position: relative;
+    .columns {
+      padding-top: 20px;
+    }
+   svg {
+     position: absolute;
+     left: 90px;
+     width: 27px;
+     height: 27px;
+   }
+   svg.top {
+     width: 27px;
+     height: 27px;
+   }
+ }
+}
 
 div.full-row .bt-services-container {
   margin: 0;
@@ -69,6 +87,7 @@ div.full-row .bt-services-container {
   a.link-row {
     padding: 29px $small-column-gutter 29px $small-column-gutter;
     background-color: inherit;
+    border: none;
   }
   li.bt-service {
     a.link-row, a.link-row:hover {
@@ -99,15 +118,13 @@ div.full-row .bt-services-container {
     }
     svg {
       position: relative;
-      bottom: -39px;
+      bottom: -52px;
       left: 40px;
       float: left;
       z-index: 1000;
     }
     svg.top {
-      position: relative;
-      top: -30px;
-      left: 40px;
+      top: -35px;
       float: left;
       fill: white !important;
     }

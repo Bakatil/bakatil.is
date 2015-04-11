@@ -1,7 +1,7 @@
 /* Employee section
 ********************************************/
 
-@media #{$medium-up} {
+@media #{$large-up} {
   div.bt-employees {
 
     background-color: white;
@@ -19,7 +19,7 @@
       flex-direction: row;
       li {
         list-style: none;
-        min-width: 270px;
+        min-width: 250px;
         max-width: 290px;
         flex-grow: 1;
         .columns {
@@ -30,6 +30,8 @@
       li.pusher {
         min-width: 0px;
         max-width: none;
+        display: list-item;
+        visibility: visible;
       }
       div.emp {
         height: 410px;
@@ -60,12 +62,6 @@
     }
   }
 }
-@media #{$small-only} {
-  .pusher {
-    display: none !important;
-    visibility: hidden;
-  }
-}
 
 .bt-employees {
 
@@ -79,6 +75,10 @@
     margin: 0;
     li {
       padding-bottom: 30px;
+    }
+    .pusher {
+      display: none;
+      visibility: hidden;
     }
     div.emp {
       height: 320px;

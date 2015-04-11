@@ -3,21 +3,30 @@
   border-top: 1px solid black;
 }
 div.footer-container {
-  height: 150px;
-  border-top: 3px solid black;
-  background-image: url("../img/hero_full.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  min-height: 20px;
+  //border-top: 3px solid black;
+  //background-image: url("../img/hero_full.jpg");
+  //background-repeat: no-repeat;
+  //background-position: center bottom;
+  border-top: 5px solid #5A8CA8;
+  background-color: $primary-color;
+  div.bt-copy {
+    background-color: #5A8CA8;
+    font-size: rem_calc(12);
+    text-align: center;
+    color: $smoke;
+  }
   footer {
     box-sizing: border-box;
     padding: 0;
     margin: 15px 0 15px 0;
+    color: $silver;
     //height: 120px;
     h3 {
-      padding: 1px 5px 1px 5px;
-      line-height: 1em;
-      display: inline;
-      background-color: rgba(0,0,0,0.6);
+//      padding: 1px 5px 1px 5px;
+//      line-height: 1em;
+//      display: inline;
+//      background-color: rgba(0,0,0,0.6);
       color: $silver;
     }
   }

@@ -18,18 +18,16 @@
     padding-bottom: 7rem;
   }
 }
-
-body.noscroll {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 .full-row {
   width: 100%;
 }
 h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: -1px;
+}
+html body a {
+  //border-bottom: 2px solid $primary-color;
+  //padding-bottom: -1px;
 }
 a:hover {
   opacity: 0.8;

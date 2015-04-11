@@ -19,14 +19,22 @@ div.bt-work {
   color: $silver;
   border-top: 3px solid #b5d763;
 
-  .bt-hline {
-    box-sizing: border-box;
-    height: 3px;
-    background-color: $black;
-  }
   .bt-header {
     h2 {
       color: $primary-color;
+    }
+  }
+  ul li a {
+    display: block;
+    position: relative;
+    p {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 0px 0 0px 9px;
+      background: rgba(0,0,0,0.3);
     }
   }
 }

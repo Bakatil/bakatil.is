@@ -39,6 +39,11 @@
     margin-top: 8rem;
   }
 }
+@media #{"only screen and (max-width: 350px)"} {
+  html body div.header-container h1 {
+    font-size: rem_calc(28);
+  }
+}
 .minimal .header-container {
   background-image: none;
   height: 110px;
