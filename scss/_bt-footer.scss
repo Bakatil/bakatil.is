@@ -1,32 +1,38 @@
+div.bt-rights {
+  background-color: #55849f;
+  color: $silver;
+  p {
+    font-size: rem_calc(12);
+    margin: 4px 0 3px 0;
+    text-align: center;
+  }
+}
 .minimal div.footer-container {
   background-image: none;
   border-top: 1px solid black;
 }
 div.footer-container {
   min-height: 20px;
-  max-height: rem_calc(200);
+  max-height: rem_calc(150);
   background-color: #5A8CA8;
   position: relative;
   overflow: hidden;
   div.columns {
     text-align: center;
+    padding: 0;
   }
   .footer-content {
     position: absolute;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
     height: 100px;
-    top: rem_calc(60);
+    top: 0;
     z-index: 30;
     span {
     }
     .footer-adr {
-      text-align: right;
-      width: 400px;
-      float: left;
-      padding-right: 20px;
-      padding-top: 13px;
+      padding-top: 15px;
       p {
         color: $silver;
         font-weight: 200;
@@ -38,8 +44,10 @@ div.footer-container {
       }
     }
     .footer-contact {
-      float: left;
-      width: 200px;
+      margin-top: 20px;
+      .button {
+        color: white;
+      }
     }
   }
   img {
@@ -54,28 +62,27 @@ div.footer-container {
     text-align: center;
     color: $smoke;
   }
-  footer {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 15px 0 15px 0;
-    color: $silver;
-    //height: 120px;
-    h3 {
-//      padding: 1px 5px 1px 5px;
-//      line-height: 1em;
-//      display: inline;
-//      background-color: rgba(0,0,0,0.6);
-      color: $silver;
+}
+@media #{$medium} {
+  body div.footer-container {
+    img {
+      bottom: rem_calc(-40);
     }
   }
 }
 
-@media #{$large-up} {
+@media #{$large} {
   body div.footer-container {
-    .footer-content {
-    }
     img {
-      bottom: rem_calc(-50);
+      bottom: rem_calc(-20);
     }
   }
 }
+@media #{$xlarge-up} {
+  body div.footer-container {
+    img {
+      bottom: rem_calc(0);
+    }
+  }
+}
+
