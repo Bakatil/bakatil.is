@@ -2,9 +2,13 @@ div.bt-rights {
   background-color: #55849f;
   color: $silver;
   p {
-    font-size: rem_calc(12);
-    margin: 4px 0 3px 0;
+    font-size: rem_calc(16);
+    letter-spacing: 0.05rem;
+    margin: 5px 0 3px 0;
     text-align: center;
+    a {
+      white-space: nowrap;
+    }
   }
 }
 .minimal div.footer-container {
@@ -13,7 +17,7 @@ div.bt-rights {
 }
 div.footer-container {
   min-height: 20px;
-  max-height: rem_calc(150);
+  max-height: rem_calc(110);
   background-color: #5A8CA8;
   position: relative;
   overflow: hidden;
@@ -26,13 +30,12 @@ div.footer-container {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
-    height: 100px;
     top: 0;
     z-index: 30;
     span {
     }
     .footer-adr {
-      padding-top: 15px;
+      padding-top: 25px;
       p {
         color: $silver;
         font-weight: 200;
@@ -44,7 +47,7 @@ div.footer-container {
       }
     }
     .footer-contact {
-      margin-top: 20px;
+      margin-top: 30px;
       .button {
         color: white;
       }
@@ -52,7 +55,7 @@ div.footer-container {
   }
   img {
     position: relative;
-    bottom: rem_calc(-100);
+    bottom: rem_calc(-50);
     width: 100%;
     opacity: 0.051;
   }
@@ -65,23 +68,35 @@ div.footer-container {
 }
 @media #{$medium} {
   body div.footer-container {
+    max-height: rem_calc(120);
+    .footer-content .footer-contact {
+      margin-top: 40px;
+    }
     img {
-      bottom: rem_calc(-40);
+      bottom: rem_calc(-10);
     }
   }
 }
 
 @media #{$large} {
   body div.footer-container {
+    max-height: rem_calc(120);
+    .footer-content .footer-contact {
+      margin-top: 40px;
+    }
     img {
-      bottom: rem_calc(-20);
+      bottom: rem_calc(0);
     }
   }
 }
 @media #{$xlarge-up} {
   body div.footer-container {
+    .footer-content .footer-contact {
+      margin-top: 50px;
+    }
+    max-height: rem_calc(140);
     img {
-      bottom: rem_calc(0);
+      bottom: rem_calc(20);
     }
   }
 }
