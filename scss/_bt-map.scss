@@ -1,0 +1,16 @@
+#map {
+  width: 100%;
+  height: 300px;
+}
+.bt-map {
+  background-color: $primary-color;
+  color: $silver;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  .bt-map-frame {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 17px #999;
+    border-radius: 2px;
+  }
+}
