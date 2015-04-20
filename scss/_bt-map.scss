@@ -7,6 +7,22 @@
   color: $silver;
   padding-bottom: 50px;
   padding-top: 50px;
+  .bt-map-info {
+    padding-top: 90px;
+    h2 {
+      text-transform: capitalize;
+      color: $silver;
+    }
+    p {
+      font-size: 1.8em;
+      line-height: 1.4em;
+      margin: 0;
+    }
+    .button {
+      margin-top: 20px;
+      color: $jet;
+    }
+  }
   .bt-map-frame {
     background: #fff;
     padding: 10px;
