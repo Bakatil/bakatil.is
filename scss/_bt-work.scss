@@ -1,23 +1,11 @@
 /* Prior work section
 ******************************************/
 
-@media #{$small-only} {
-  .bt-work-images {
-    img {
-      padding-bottom: 10px;
-    }
-  }
-  .work-content {
-    padding-top: 10px;
-  }
-}
-
 div.bt-work {
   background-color: black;
   padding-top: 4px;
-  padding-bottom: 3rem;
+  padding-bottom: 60px;
   color: $silver;
-  border-top: 3px solid #b5d763;
 
   .bt-header {
     h2 {
@@ -63,5 +51,17 @@ div.bt-work {
   }
   .bt-work .columns {
     padding-top: 50px;
+  }
+}
+
+
+@media #{$small-only} {
+  .bt-work-images {
+    img {
+      padding-bottom: 10px;
+    }
+  }
+  .work-content {
+    padding-top: 10px;
   }
 }

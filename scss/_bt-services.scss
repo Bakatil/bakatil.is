@@ -159,12 +159,12 @@ div.full-row .bt-services-container {
   }
   .bt-service:nth-child(1) {
     background-color: black;
-    color: $silver;
+    color: $gainsboro;
     svg { fill: black; }
     div.service-img {
       background-image: url("../img/service_img1.jpg");
     }
-    h3, h4 { color: white; }
+    h3, h4 { color: $gainsboro; }
   }
   .bt-service:nth-child(2) {
     background-color: #f08678;
@@ -206,6 +206,6 @@ div.full-row .bt-services-container {
     div.service-img {
       background-image: url("../img/service_img7.jpg");
     }
-    h3, h4, .more { color: $silver; }
+    h3, h4, .more { color: $gainsboro; }
   }
 }
