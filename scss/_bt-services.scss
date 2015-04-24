@@ -90,6 +90,31 @@ div.full-row .bt-services-container {
     padding: 29px $small-column-gutter 29px $small-column-gutter;
     background-color: inherit;
     border: none;
+    .bt-plus {
+      position: absolute;
+      bottom: 20px;
+      right: 25px;
+      height: 20px;
+      width: 20px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      border-color: rgba(255,255,255,0.3);
+      
+      span {
+        text-align: center;
+        font-family: arial;
+        font-size: 1.44em;
+        line-height: 0.9em;
+        color: rgba(255,255,255,0.3);
+      }
+      span::before {
+        content: "+";
+        height: 20px;
+        width: 16px;
+        display: block;
+        margin-top: -2px;
+      }
+    }
   }
   li.bt-service {
     a.link-row, a.link-row:hover {
@@ -159,12 +184,12 @@ div.full-row .bt-services-container {
   }
   .bt-service:nth-child(1) {
     background-color: black;
-    color: $silver;
+    color: $gainsboro;
     svg { fill: black; }
     div.service-img {
       background-image: url("../img/service_img1.jpg");
     }
-    h3, h4 { color: white; }
+    h3, h4 { color: $gainsboro; }
   }
   .bt-service:nth-child(2) {
     background-color: #f08678;
@@ -206,6 +231,6 @@ div.full-row .bt-services-container {
     div.service-img {
       background-image: url("../img/service_img7.jpg");
     }
-    h3, h4, .more { color: $silver; }
+    h3, h4, .more { color: $gainsboro; }
   }
 }

@@ -121,23 +121,25 @@ $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
 
+$salmon      : #F08678;
+
 // We use these as default colors throughout
 $primary-color: #64a0c1;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
-$success-color: #91b33e;
+$success-color: #b5d763;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
 // $body-bg: $white;
-$body-font-color: $jet;
+$body-font-color: $oil;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
-// $font-smoothing: antialiased;
+$font-smoothing: antialiased;
 
 // We use these to control text direction settings
 // $text-direction: ltr;
@@ -207,11 +209,11 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2)";
 $header-font-family: $font-family-header;
 $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: $oil;
 $header-line-height: 1.1;
 $header-top-margin: 0;
 $header-bottom-margin: 0;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
 $h1-font-size: rem-calc(40);
@@ -454,7 +456,7 @@ $anchor-font-color-hover: none;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
-$button-function-factor: -5%;
+$button-function-factor: 40%;
 
 // We use these to control button border styles.
 // $button-border-width: 0;
