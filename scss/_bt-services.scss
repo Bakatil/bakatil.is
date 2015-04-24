@@ -90,6 +90,31 @@ div.full-row .bt-services-container {
     padding: 29px $small-column-gutter 29px $small-column-gutter;
     background-color: inherit;
     border: none;
+    .bt-plus {
+      position: absolute;
+      bottom: 20px;
+      right: 25px;
+      height: 20px;
+      width: 20px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      border-color: rgba(255,255,255,0.3);
+      
+      span {
+        text-align: center;
+        font-family: arial;
+        font-size: 1.44em;
+        line-height: 0.9em;
+        color: rgba(255,255,255,0.3);
+      }
+      span::before {
+        content: "+";
+        height: 20px;
+        width: 16px;
+        display: block;
+        margin-top: -2px;
+      }
+    }
   }
   li.bt-service {
     a.link-row, a.link-row:hover {
