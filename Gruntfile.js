@@ -32,6 +32,19 @@ module.exports = function(grunt) {
         }
       }
     },
+    uglify: {
+      js: {
+        files: {
+          'assets/js/prod.min.js': [
+            'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/foundation/js/foundation.min.js',
+            'bower_components/fastclick/lib/fastclick.js',
+            'bower_components/skrollr/dist/skrollr.min.js',
+            'assets/js/app.js'
+          ]
+        }
+      }
+    },
 
     watch: {
       grunt: {
@@ -56,7 +69,7 @@ module.exports = function(grunt) {
     },
     connect: {
       options: {
-        hostname: '192.168.1.4',
+        hostname: '192.168.1.5',
         port: 8080,
         base: '',
         open: true,
@@ -91,11 +104,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-htmlhint');
   grunt.loadNpmTasks('grunt-serve');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-wiredep');
 
   grunt.registerTask('build', ['sass', 'htmlhint']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('start', ['connect:livereload', 'watch']);
+  grunt.registerTask('start', ['uglify', 'connect:livereload', 'watch']);
 }

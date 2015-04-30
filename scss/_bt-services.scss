@@ -227,7 +227,8 @@ div.full-row .bt-services-container {
   }
   .bt-service:nth-child(7) {
     background-color: #5b5b58;
-//    svg { fill: #b5d763; }
+    color: $gainsboro;
+    //svg { fill: #b5d763; }
     div.service-img {
       background-image: url("../img/service_img7.jpg");
     }

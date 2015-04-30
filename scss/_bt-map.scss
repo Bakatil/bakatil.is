@@ -1,5 +1,8 @@
 /* Bakatil Google map & contact info
  *********************************************/
+html body div.nogutter {
+  padding: 0;
+}
 .bt-map {
   background-color: $primary-color;
   color: $silver;
@@ -65,6 +68,10 @@
   }
   .bt-map-frame {
     background: #fff;
+    box-sizing: border-box;
+    height: 360px;
+    width: 100%;
+    box-sizing: border-box;
     padding: 5px 5px 0 5px;
     box-shadow: 0 0 13px #456c83;
     border-radius: 2px;
@@ -74,9 +81,6 @@
 @media #{$medium-up} {
   div.bt-map {
     padding: 80px 0 50px 0;
-    div.btt-align-bottom {
-
-    }
     .bt-map-info {
       padding: 41px 0 0 0;
     }
