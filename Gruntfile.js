@@ -69,7 +69,7 @@ module.exports = function(grunt) {
     },
     connect: {
       options: {
-        hostname: '192.168.1.5',
+        hostname: '192.168.1.2',
         port: 8080,
         base: '',
         open: true,
